@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<!-- 대체 글자를 부라우저 화면에 출력하지 않기위한 설정 -->
+  
+  <style type="text/css">
+	.sr-only{
+		position: absolute;
+		width:1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		border: 0;
+	}
+</style>
+
+<script src="https://use.fontawesome.com/926fe18a63.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".headC").click(function(){
+			$(".headB").slideToggle();
+		});
+	});
+</script>
+</head>
+<body>
+	<header class="head-color">
+		<div class="container">
+			<div class="container-small">
+				<a href="index.html" class="headA">Yujisu</a>
+				<button type="button" class="headC">
+					<span class="fa fa-bars" title="MENU"></span>
+				</button>
+			</div>
+			
+			<nav class="headB">
+				<ul>
+					<li><a href="index.html">TOP</a></li>
+					<li><a href="contents.html">내용</a></li>
+					<li><a href="about.html">about</a></li>
+					<li><a href="contact.html">문의</a></li>
+					<li><a href="#">기사</a>
+					<ul>
+						<li><a href="list-a.html">기사A</a></li>
+						<li><a href="list-b.html">기사B</a></li>
+						<li><a href="list-c.html">기사C</a></li>
+					</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<section class="conA compact">
+		<div class="container">
+			<h1>Yu jisu</h1>
+			<p>완벽한 프로그램 개발을 목표로 한 개발자 로그입니다</p>
+		</div>
+	</section>
+		<section class="listA">
+			<h1 class="sr-only">RECENT POSTS</h1>
+			<div class="container">
+				<article>
+					<a href="#">
+						<div class="photo" style="background-image: url(images/image9.png);"></div>
+						<div class="text">
+							<h2>노란꽃</h2>
+							<p>노란꽃으로 방을 꾸미면 좋은일이 있을지도 몰라요. 이유는....</p>
+						</div>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<div class="photo" style="background-image: url(images/image5.jpg);"></div>
+						<div class="text">
+							<h2>강아지</h2>
+							<p>강아지는 너무 귀여워요..</p>
+						</div>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<div class="photo" style="background-image: url(images/image11.jpg);"></div>
+						<div class="text">
+							<h2>타마고산도 맛있게 먹는방법 </h2>
+							<p>가끔 타마고산도를 여러곳에서 많이 받아 처리가 힘들었는데요. 다양한 방법으로 
+							맛있게 요리할수 있어요</p>
+						</div>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<div class="photo" style="background-image: url(images/image13.jpg);"></div>
+						<div class="text">
+							<h2>광주 카레 맛집</h2>
+							<p>취미로 맛집을 탐방해보는것이 어떨까요?</p>
+						</div>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<div class="photo" style="background-image: url(images/image4.jpg);"></div>
+						<div class="text">
+							<h2>Dingo</h2>
+							<p>여러곳에 숨은 귀여운 딩고를 찾아보았습니다.</p>
+						</div>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<div class="photo" style="background-image: url(images/image6.jpg);"></div>
+						<div class="text">
+							<h2>설탕과 수분의 달콤한 관계</h2>
+							<p>설탕을 먹고는 꼭 양치질을 해줘야 해요...물론 하루 세번!</p>
+						</div>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<div class="photo" style="background-image: url(images/image23.jpg);"></div>
+						<div class="text">
+							<h2>라이프로그 시작하기</h2>
+							<p>일상생활을 기록해서 데이터로 남기는 것을 "라이프로그"라고 합니다</p>
+						</div>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<div class="photo" style="background-image: url(images/image18.png);"></div>
+						<div class="text">
+							<h2>미노이</h2>
+							<p>미노이는 귀여워요</p>
+						</div>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<div class="photo" style="background-image: url(images/image16.jpg);"></div>
+						<div class="text">
+							<h2>가인</h2>
+							<p>가인은 너무너무 예쁜데 컴백을 안해요 </p>
+						</div>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<div class="photo" style="background-image: url(images/image8.jpg);"></div>
+						<div class="text">
+							<h2>해외에서 살아보기</h2>
+							<p>한국에서의 일상이 지루해졌다면 해외로 나가서 잠시 살다 오는것은 어떨까요?</p>
+						</div>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<div class="photo" style="background-image: url(images/image10.jpg);"></div>
+						<div class="text">
+							<h2>공중에 몸을 맡기기</h2>
+							<p>공중에 몸을 맡기면 좋은일이 있을지도 몰라요. 이유는....</p>
+						</div>
+					</a>
+				</article>
+				<article>
+					<a href="#">
+						<div class="photo" style="background-image: url(images/image17.jpg);"></div>
+						<div class="text">
+							<h2>로고의 비밀</h2>
+							<p>현재 로고에 있는 이 귀여운 인형의 비밀이 있어요.. 그게 뭐냐면..!</p>
+						</div>
+					</a>
+				</article>
+			</div>
+		</section>
+	
+	<footer>
+		<div class="container">
+			<div class="footA">
+				<h2>
+					YU JISU
+				</h2>
+				<p>
+					주소 : 광주광역시 북구 중가로 81번길<br>
+					<a href="http://bizpoll.co.kr">http://bizpoll.co.kr</a>
+				</p>
+				<nav class="footD">
+					<ul>
+						<li>
+							<a href="#">
+								<span class="fa fa-twitter"></span>
+								<span class="sr-only">Twitter</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa fa-facebook"></span>
+								<span class="sr-only">fackbook</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa fa-google-plus"></span>
+								<span class="sr-only">google+</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa fa-instagram"></span>
+								<span class="sr-only">Instagram</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa fa-youtube"></span>
+								<span class="sr-only">YouTube</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<nav class="footB">
+				<div>
+					<h3>About</h3>
+					<ul>
+						<li><a href="#">설립</a></li>
+						<li><a href="#">주소</a></li>
+						<li><a href="#">지도</a></li>
+						<li><a href="#">스태프</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3>Support</h3>
+					<ul>
+						<li><a href="#">다운로드</a></li>
+						<li><a href="#">메뉴얼</a></li>
+						<li><a href="#">자주 묻는질문</a></li>
+						<li><a href="#">문의</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3>Contents</h3>
+					<ul>
+						<li><a href="#">공지사항</a></li>
+						<li><a href="#">비즈니스</a></li>
+						<li><a href="#">프로필</a></li>
+						<li><a href="#">개발자</a></li>
+						<li><a href="#">블로그</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="footC">
+				ⓒYujisu corp. All rights reserved.
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

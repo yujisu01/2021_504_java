@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form 태그 예제</title>
+</head>
+<body>
+	<form action="#" method="get" name="frm">
+		이름 : <input type="text" name="irum" maxlength="10"><br> 
+		ID : <input type="text" name="uid" maxlength="20"><br> 
+		PW : <input type="password" name="upw" maxlength="20"><br> 
+		tel : <input type="text" name="uphone1" size="3" maxlength="3">- 
+			<input type="text" name="uphone2" size="5" maxlength="4">-
+			<input type="text" name="uphone2" size="5" maxlength="4"><br> 
+		photo : <input type="file" name="upic"><br> 
+			gender : <input type="radio" name="gender" value="m">남 
+			<input type="radio" name="gender" value="f">여<br> 
+			language : <input
+			type="checkbox" name="lan" value="kor" checked="checked">한글 <input
+			type="checkbox" name="lan" value="eng">영어 <input
+			type="checkbox" name="lan" value="jap">일본어 <input
+			type="checkbox" name="lan" value="chi">중국어<br> 
+		자기소개 :
+		<textarea rows="5" cols="30">(100자이내로 입력) </textarea><br> 
+		국적 : <select>
+				<option>korea</option>
+				<option>usa</option>
+				<option>japan</option>
+				<option>china</option>
+			</select><br>
+		좋아하는 음식 : <select multiple="multiple">
+				<option>치킨</option>
+				<option>피자</option>
+				<option>떡볶이</option>
+				<option>비빔밥</option>
+			</select><br>
+			<input type="submit" value = "유지수">
+	</form>
+</body>
+</html>

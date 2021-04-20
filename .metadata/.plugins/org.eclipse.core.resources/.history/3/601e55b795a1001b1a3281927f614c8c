@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bizpoll Shop</title>
+</head>
+
+<body>
+	<header>
+		<hr>
+		<div id = "container">
+			<h2>Main</h2>
+			<a href="index.html" class="product">Shop</a>
+		</div>
+		<div id = "login">
+			<a href="login_action.bizpoll">Login</a>
+		</div>
+		<nav class="headB">
+			<ul>
+				<li><a href="index.html">메뉴1</a>
+			
+			</ul>
+		</nav>
+	</header>
+</body>
+
+</html>

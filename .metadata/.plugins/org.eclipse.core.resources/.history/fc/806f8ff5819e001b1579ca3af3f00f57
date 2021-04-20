@@ -1,0 +1,22 @@
+package com.bizpoll.action;
+
+import java.io.IOException;
+import java.rmi.ServerException;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class IndexAction implements Action{
+
+	@Override
+	public ActionForward excute(HttpServletRequest request, HttpServletResponse response)
+			throws ServerException, IOException {
+		// 어디로 보낼지 정해준다. 최종으로 가야할곳.
+		String uri = "index.jsp";
+		
+		// 상품관련 클래스
+		ProductDAO pDao = ProductDAO.getInstance();
+		return null;
+	}
+
+}

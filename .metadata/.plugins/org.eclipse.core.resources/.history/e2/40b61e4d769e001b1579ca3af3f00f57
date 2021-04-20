@@ -1,0 +1,9 @@
+package com.bizpoll.action;
+
+public class ActionFoward {
+	// 응답할 페이지주소 경로
+	private String path;
+	
+	// true → sendRedirect,   false → forward
+	private boolean isRedirect;
+}

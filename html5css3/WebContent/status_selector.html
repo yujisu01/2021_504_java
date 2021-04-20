@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>상태선택자</title>
+<style type="text/css">
+	input:focus{
+		border: 2px solid #3399ff;
+		padding: 6px;
+	}
+	input:enabled {
+		color: #ff99ff;
+		font-weight: bold;
+	}
+	input:disabled {
+		color: #ff0000;
+}
+
+	#content{
+		width:300px;
+	}
+	ul li{
+		border: 1px solid #99ccff;
+		padding: 10px;
+		list-style: none;
+		text-align: center;
+	}
+	
+	ul li:first-of-type {
+		border-radius: 50px 50px 0 0;
+	}
+	ul li:last-of-type {
+		border-radius: 0 0 50px 50px;
+}
+
+/* 구조 선택자: 구조에 따라서 CSS속성이 변하는설정(IE8이하에서는 사용할수 없다)
+	: first-child → 첫번째에 위치하는 자손을 선택
+	: last-child → 마지막에 위치하는 자손을 선택
+	: nth-child(수열) → 앞에서 수열 n번째에 있는 자손을 선택
+					    예) nth-child(2n),
+					     nth-child(2n+1)
+	: nth-last-child(수열) → 뒤에서 수열 n번째에 있는 자손을 선택
+*/
+	ul li:nth-child(2n+1) {
+		background-color: #6699ff;
+	}
+	ul li:first-child, ul li:last-child {
+		background-color: #ffff66;
+	}
+	
+/* 
+	px : pixel의 줄임말로, 컴퓨터 화면의 한 점 크기를 나타냄
+	%  : 비율을 의미하는 퍼센트로, 100%기준크기
+	pt : point의 줄임말로, 보통 글꼴의 단위로 사용 (보통 픽셀을 더많이쓴다)
+			1point는 1/72인치
+	em : 1em은 현재글꼴의 크기를 나타냄, 예를 들어 2em은 현재 글꼴의 2배 크기
+*/
+</style>
+</head>
+<body>
+	<div>
+		<form action="#">
+			이름: <input type="text" name="irum"><br>
+			ID : <input type="text" name="uid"><br>
+			PW : <input type="password" name="upw" value="12345" disabled="disabled"><br>
+			
+		</form>
+	</div>
+	<hr>
+	<div id="content">
+		<ul>
+			<li><a href="#">menu1</a></li>
+			<li><a href="#">menu2</a></li>
+			<li><a href="#">menu3</a></li>
+			<li><a href="#">menu4</a></li>
+			<li><a href="#">menu5</a></li>
+			<li><a href="#">menu6</a></li>
+			<li><a href="#">menu7</a></li>
+			<li><a href="#">menu8</a></li>
+		</ul>
+	</div>
+</body>
+</html>

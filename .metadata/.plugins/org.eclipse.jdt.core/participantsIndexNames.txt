@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\504\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\858363711.index
+\html5css3\src
+C:\Users\504\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3679761396.index
+\bizpoll\src

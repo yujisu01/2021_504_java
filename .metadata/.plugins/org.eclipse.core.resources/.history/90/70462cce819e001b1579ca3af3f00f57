@@ -1,0 +1,5 @@
+package com.bizpoll.dao;
+
+public class ProductDAO {
+
+}

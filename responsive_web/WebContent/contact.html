@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>content</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+ <style type="text/css">
+	.sr-only{
+		position: absolute;
+		width:1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		border: 0;
+	}
+</style>
+<script src="https://use.fontawesome.com/926fe18a63.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".headC").click(function(){
+			$(".headB").slideToggle();
+		});
+	});
+</script>
+</head>
+<body class= "nohero">
+<header class="head-color">
+		<div class="container">
+			<div class="container-small">
+				<a href="index.html" class="headA">Yujisu</a>
+				<button type="button" class="headC">
+					<span class="fa fa-bars" title="MENU"></span>
+				</button>
+			</div>
+			
+			<nav class="headB">
+				<ul>
+					<li><a href="index.html">TOP</a></li>
+					<li><a href="contents.html">내용</a></li>
+					<li><a href="about.html">about</a></li>
+					<li><a href="contact.html">문의</a></li>
+					<li><a href="#">기사</a>
+					<ul>
+						<li><a href="list-a.html">기사A</a></li>
+						<li><a href="list-b.html">기사B</a></li>
+						<li><a href="list-c.html">기사C</a></li>
+					</ul>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<article class="post">
+		<div class="container">
+			
+			<h1>문의</h1>
+			<p>BIZPOLL에 문의가 있다면 다음 연락처로 문의해주세요</p>
+				<div class="contact-wrap">
+					<div class="contact">
+						<span class="fa fa-phone"></span>
+						<h2>전화</h2>
+							<a href="tel:01012345678">010-1234-5678</a>
+					</div>
+					<div class="contact">
+						<span class="fa fa-envelope"></span>
+						<h2>이메일</h2>
+						<a href="mailto:contact@bizpoll.co.kr">contact@pizpoll.co.kr</a>
+					</div>
+				</div>
+		</div>
+	</article>
+	<aside class="location">
+		<h2>LOCATION</h2>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.
+		8615143320826!2d126.90779721554105!3d35.
+		16007436598344!2m3!1f0!2f0!3f0!3m2!1i1024!2i
+		768!4f13.1!3m3!1m2!1s0x35718c64ee003ab3%3A0x355ac7a11038704e!2zKOyjvCntl
+		Zzqta3qsr3smIHsm5A!5e0!3m2!1sko!2skr!4v1618200335547!5m2!1sko!2skr" 
+		width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	</aside>
+	
+	<footer>
+		<div class="container">
+			<div class="footA">
+				<h2>
+					YU JISU
+				</h2>
+				<p>
+					주소 : 광주광역시 북구 중가로 81번길<br>
+					<a href="http://bizpoll.co.kr">http://bizpoll.co.kr</a>
+				</p>
+				<nav class="footD">
+					<ul>
+						<li>
+							<a href="#">
+								<span class="fa fa-twitter"></span>
+								<span class="sr-only">Twitter</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa fa-facebook"></span>
+								<span class="sr-only">fackbook</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa fa-google-plus"></span>
+								<span class="sr-only">google+</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa fa-instagram"></span>
+								<span class="sr-only">Instagram</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="fa fa-youtube"></span>
+								<span class="sr-only">YouTube</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<nav class="footB">
+				<div>
+					<h3>About</h3>
+					<ul>
+						<li><a href="#">설립</a></li>
+						<li><a href="#">주소</a></li>
+						<li><a href="#">지도</a></li>
+						<li><a href="#">스태프</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3>Support</h3>
+					<ul>
+						<li><a href="#">다운로드</a></li>
+						<li><a href="#">메뉴얼</a></li>
+						<li><a href="#">자주 묻는질문</a></li>
+						<li><a href="#">문의</a></li>
+					</ul>
+				</div>
+				<div>
+					<h3>Contents</h3>
+					<ul>
+						<li><a href="#">공지사항</a></li>
+						<li><a href="#">비즈니스</a></li>
+						<li><a href="#">프로필</a></li>
+						<li><a href="#">개발자</a></li>
+						<li><a href="#">블로그</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="footC">
+				ⓒYujisu corp. All rights reserved.
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>안녕하세요</title>
+ <h1 id= "name">안녕하세요</h1>
+<script type="text/javascript">
+	function changeColor(){
+		e = document.getElementById("name");
+		e.style.color="#ffdddd";
+	}
+</script>
+<button type="button" onclick="changeColor();">눌러보세요</button>
+</head>
+<body>
+
+</body>
+</html>

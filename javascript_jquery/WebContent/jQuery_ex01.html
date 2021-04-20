@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	body{
+		background-color: #eef;
+	}
+	div{
+		padding: 20px;
+	}
+</style>
+<script type="text/javascript" src="js/jQuery3.x/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		// <div class="out"> 의 변수i 선언
+		var i = 0;
+		// 클릭메서드
+		// 괄호안에 선택자 넣어줌
+		$("h2").click(function(){
+			$(this).slideUp();
+		});
+		$("div.out").mouseover(function(){
+			// p태그의 첫번째한테 접근하겠다
+			$("p:first", this).text("Mouse Over");
+			// 아까변수 선언한거 (연산자들도 들어올수있다)
+			// p태그의 마지막자식에게 접근하겠다
+			$("p:last", this).text(++i);
+		});
+		$("input").focus(function() {
+			// 스타일 주는 함수
+			$(this).css("background-color","#ff3d77");
+		});
+		// 많이쓰는거임. 
+		$("input").blur(function() {
+			$(this).css("background-color","#fff300");
+		});
+		// function(파라미터존재) =콜백함수
+		// 콜백함수: 함수내부의 처리결과값을 리턴하는데 주로사용
+		// 마우스의 위치(좌표)를 잡는 함수
+		$(document).mouseover(function(e) {
+			// 텍스트로 뿌려줌
+			$("#log").text("e.pageX : " + e.pageX + ", e.pageY : " + e.pageY);
+		});
+		/* $("button").click(function() {
+			$("#dog").show("slow");
+		}); */
+		$("#animate").click(function(){
+			$("#ani_dog").animate({
+				left : "100px"
+			});
+		});
+		$("#fade-in").click(function() {
+			//alert("확인");
+			$("#fade_dog").fadeIn("fast");
+			
+		});
+		$("#fade-out").click(function() {
+			// =0.4초
+			$("#fade_dog").fadeOut(400);
+		});
+		$("#chain").click(function() {
+			//show()실행후,fadeOut실행()후,slideDown()실행하라
+			$("#chain_dog").show("fast").fadeOut("slow").slideDown("slow");
+		});
+	});
+	
+</script>
+</head>
+<body>
+	<h2>클릭하면 사라집니다.</h2>
+	<div class="out">
+		<p>마우스를 여기로 옮기세요</p>
+		<p>0</p>
+	</div>
+	<hr>
+	아이디 : <input type="text" name="userid">
+	<hr>
+	<div id="log"></div>
+	<hr>
+	<button>Show Image</button>
+	<img id="dog" alt="공부하는 강아지" src="images/image5.jpg" style="display:none;" 
+	width="300px;" height="400px;">
+	<hr>
+	<img id="ani_dog" alt="공부하는 강아지" src="images/image5.jpg" style="position:relative;" 
+	width="300px;" height="400px;">
+	<button id="animate">animate</button>
+	<hr>
+	<img id="chain_dog" alt="공부하는 강아지" src="images/image17.jpg" style="display: none;" 
+	width="300px;" height="300px;">
+	<button id="chain">메서드 체이닝 시작</button>
+	<hr>
+	<img id="fade_dog" alt="공부하는 강아지" src="images/image14.jpg" 
+	width="300px;" height="200px;">
+	<button id="fade-in">fade in</button>
+	<button id="fade-out">fade out</button>
+	
+</body>
+</html>
