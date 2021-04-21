@@ -11,7 +11,7 @@
 <body>
 <%@ include file="../header.jsp" %>
 <div img="main_img">
-	<img alt="main_img" src="images/product_img/w8.jpg">
+	<img alt="main_img" src="images/product_img/w8.jpg" width="1400" height="900">
 </div>
 <div id="front">
 	<h2>New Item</h2>

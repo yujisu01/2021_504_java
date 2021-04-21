@@ -12,17 +12,20 @@ public class LogoutAction implements Action{
 	@Override
 	public ActionForward excute(HttpServletRequest request, HttpServletResponse response)
 			throws ServerException, IOException {
-		// TODO Auto-generated method stub
 		String url = "index.bizpoll";
 		
-		HttpSession session = request.getSession();
-		
+		// false가 들어가는이유
+		HttpSession session = request.getSession(false);
+		if(session != null) {
+			// session객체가 사라진다
+			session.invalidate();
+		}
 		ActionForward forward = new ActionForward();
-		session.removeAttribute("loginUser");
-		
 		forward.setPath(url);
 		forward.setRedirect(true);
+		
 		return forward;
 	}
+	
 
 }

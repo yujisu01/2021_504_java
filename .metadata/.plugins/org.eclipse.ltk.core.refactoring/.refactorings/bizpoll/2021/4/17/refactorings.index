@@ -1,1 +1,7 @@
 1618818210911	Delete element
+1618965979181	Rename type 'MemberDAO'
+1618965985164	Rename type 'MemDAO'
+1618965990286	Rename type 'MemtDAO'
+1618968396051	Rename type 'LogoutAction'
+1618968400609	Rename type 'LogoutActionn'
+1618973041522	Move 'member' to 'WebContent'

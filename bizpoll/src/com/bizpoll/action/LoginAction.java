@@ -5,9 +5,9 @@ import java.rmi.ServerException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.bizpoll.dao.MemberDAO;
-import com.bizpoll.dto.MemberDTO;
+/*
+import com.bizpoll.dao.MemDAO;
+import com.bizpoll.dto.MemberDTO;*/
 
 public class LoginAction implements Action{
 

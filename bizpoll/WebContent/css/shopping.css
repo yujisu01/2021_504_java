@@ -6,7 +6,7 @@ body{
 }
 
 #wrap{
-    width:971px; /* 각 웹 페이지 크기에 맞게 사이즈 조정 */
+    width:940px; /* 각 웹 페이지 크기에 맞게 사이즈 조정 */
     text-align:left;
     margin:0;
     margin-right:auto;
@@ -20,9 +20,9 @@ body{
 
 #logo{
     float:left;
-    width:180px;
+    width:140px;
     height:100px;
-    margin:40px 0 0 40px;
+    margin:0px 0 0 40px;
 }
 
 nav#catagory_menu{
@@ -186,6 +186,8 @@ footer #copy {
 } 
 #main_img img{
     margin:9px 0 0 0; 
+    
+    
 }
 
 div#front{

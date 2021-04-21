@@ -11,10 +11,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.bizpoll.action.Action;
 import com.bizpoll.action.ActionForward;
+import com.bizpoll.action.ContractAction;
 import com.bizpoll.action.IndexAction;
 import com.bizpoll.action.LoginAct;
 import com.bizpoll.action.LoginAction;
-import com.bizpoll.action.LogoutAction;
+import com.bizpoll.action.LogoutAct;
 import com.bizpoll.action.productDetail;
 
 /**
@@ -63,8 +64,11 @@ public class BizpollFrontController extends HttpServlet {
 		}else if(command.equals("/login.bizpoll")) {
 			action = new LoginAct();
 			forward = action.excute(request, response);
-		}else if(command.equals("/logout_action.bizpoll")) {
-			action = new LogoutAction();
+		}else if(command.equals("/logout.bizpoll")) {
+			action = new LogoutAct();
+			forward = action.excute(request, response);
+		}else if(command.equals("/contract.bizpoll")) {
+			action = new ContractAction();
 			forward = action.excute(request, response);
 		}
 		

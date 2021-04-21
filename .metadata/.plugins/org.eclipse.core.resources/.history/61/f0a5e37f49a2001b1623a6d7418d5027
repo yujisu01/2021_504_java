@@ -1,0 +1,11 @@
+/**
+ * 
+ */
+function go_next(){
+	// 동의함이 체크가 됐다면
+	if(document.frm.okno1[0].checked == true){
+		// 입력할수있는 폼화면이 떠야한다
+		document.frm.action ="join_form.bizpoll";
+		
+	}
+}

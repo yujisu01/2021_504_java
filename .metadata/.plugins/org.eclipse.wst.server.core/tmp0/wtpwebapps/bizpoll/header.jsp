@@ -15,7 +15,7 @@
 	<div id="wrap">
 		<header>
 			<div id="logo">
-				<a href="index.bizpoll"><img alt="" src="images/logo.png" width="290" height="250">
+				<a href="index.bizpoll"><img alt="" src="images/logo.png">
 				</a>
 			</div>
 			<nav id="category_menu">
@@ -24,12 +24,13 @@
 					<c:when test="${empty sessionScope.loginUser}">
 					<li><a href="login_action.bizpoll">LogIn</a></li>
 					<li>|</li>
-					<li><a>Join</a></li>
+					<li><a href="contract.bizpoll">Join</a></li>
 					
 					</c:when>
 						<c:otherwise>
-						<li>${sessionScope.loginUser.name}(${sessionScope.loginUser.name})</li>
-						<li><a href="logout_action.bizpoll">Logout</a></li>
+						<li style="color: orange">
+						${sessionScope.loginUser.name}(${sessionScope.loginUser.name})</li>
+						<li><a href="logout.bizpoll">Logout</a></li>
 						
 					</c:otherwise>
 					</c:choose>
@@ -42,7 +43,7 @@
 					<li>|</li>
 					<li><a>App</a></li>
 					<li>|</li>
-					<li><a>Board</a></li>
+					<li><a href="boardList.bizpoll">Board</a></li>
 					<li></li>
 				</ul>
 			</nav>

@@ -2,7 +2,7 @@ package com.bizpoll.action;
 
 import java.io.IOException;
 import java.rmi.ServerException;
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
