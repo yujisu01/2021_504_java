@@ -12,7 +12,7 @@ public class ContractAction implements Action{
 	@Override
 	public ActionForward excute(HttpServletRequest request, HttpServletResponse response)
 			throws ServerException, IOException {
-		String url = "/contract.jsp";
+		String url = "/member/contract.jsp";
 	
 		ActionForward forward = new ActionForward();
 		forward.setPath(url);

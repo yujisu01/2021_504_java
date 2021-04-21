@@ -58,5 +58,35 @@ public class MemberDAO {
 		return mDto;
 		
 	}
+	public int confirmID(String userId) {
+		// 회원 가입유무 판별하는 변수
+		int result = -1;
+		
+		String sql = "SELECT * FROM member WHERE id=?";
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		try {
+			conn = DBManager.getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, userId);
+			rs = pstmt.executeQuery();
+			
+			if(rs.next()) {
+				result = 1;
+			// 얘는 사용가능 (0으로 해도 상관은 없다)
+			}else {
+				result = -1;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			DBManager.close(conn, pstmt, rs);
+			
+		}
+		//result로 리턴.
+		return result;
+	}
 
 }
