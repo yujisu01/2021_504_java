@@ -31,6 +31,8 @@
 						<li style="color: orange">
 						${sessionScope.loginUser.name}(${sessionScope.loginUser.name})</li>
 						<li><a href="logout.bizpoll">Logout</a></li>
+							
+							<li><a href="delete.bizpoll">회원탈퇴</a></li>
 						
 					</c:otherwise>
 					</c:choose>
@@ -44,7 +46,8 @@
 					<li><a>App</a></li>
 					<li>|</li>
 					<li><a href="boardList.bizpoll">Board</a></li>
-					<li></li>
+					<li>|</li>
+					
 				</ul>
 			</nav>
 		</header>

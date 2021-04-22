@@ -23,6 +23,12 @@ function idcheck(){
 	
 	
 }
+
+function post_zip(){
+	var url = "find_zip_num.bizpoll";
+		window.open(url,"_blank_1","toolbar=no, menubar=no, scrollbars=yes, resizable=no, " +
+				"width=500, height=300,top=300, left=300");
+}
 function go_next() {
 	// 동의함이 체크가 됐다면
 	if (document.frm.okno1[0].checked == true) {
@@ -59,4 +65,8 @@ function go_save(){
 		document.frm.action="join.bizpoll";
 		document.frm.submit();
 	}
+}
+function mem_delete(){
+	alert("회원 탈퇴하시겠습니까?");
+	
 }

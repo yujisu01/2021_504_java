@@ -41,17 +41,21 @@
 <fullyQualifiedTypeName name="com.bizpoll.dao.ProductDAO"/>
 <fullyQualifiedTypeName name="com.bizpoll.action.productDetail"/>
 <fullyQualifiedTypeName name="com.bizpoll.dto.ProductDTO"/>
-<fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="com.bizpoll.dao.MemberDAO"/>
 <fullyQualifiedTypeName name="com.bizpoll.action.LoginAction"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="com.bizpoll.dao.MemDAO"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="com.bizpoll.action.ActionForward"/>
+<fullyQualifiedTypeName name="com.bizpoll.action.JoinFormAction"/>
+<fullyQualifiedTypeName name="com.bizpoll.dao.AddressDAO"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="com.bizpoll.dto.AddressDTO"/>
+<fullyQualifiedTypeName name="com.bizpoll.dao.MemberDAO"/>
 <fullyQualifiedTypeName name="com.bizpoll.dto.MemberDTO"/>
 <fullyQualifiedTypeName name="com.bizpoll.common.DBManager"/>
-<fullyQualifiedTypeName name="com.bizpoll.action.ActionForward"/>
 </qualifiedTypeNameHistroy>

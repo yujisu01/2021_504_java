@@ -14,14 +14,16 @@ public class MemberDTO implements Serializable{
 	private String phone;
 	private String useyn;
 	private Date indate;
-	private String zip_num;
+	private String zipNum;
 	
 	
 	public MemberDTO() {
 		
 	}
+
+
 	public MemberDTO(String id, String pwd, String name, String email, String address, String phone, String useyn,
-			Date indate, String zip_num) {
+			Date indate, String zipNum) {
 		super();
 		this.id = id;
 		this.pwd = pwd;
@@ -31,70 +33,112 @@ public class MemberDTO implements Serializable{
 		this.phone = phone;
 		this.useyn = useyn;
 		this.indate = indate;
-		this.zip_num = zip_num;
+		this.zipNum = zipNum;
 	}
+
+
 	public String getId() {
 		return id;
 	}
+
+
 	public void setId(String id) {
 		this.id = id;
 	}
+
+
 	public String getPwd() {
 		return pwd;
 	}
+
+
 	public void setPwd(String pwd) {
 		this.pwd = pwd;
 	}
+
+
 	public String getName() {
 		return name;
 	}
+
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
+
 	public String getEmail() {
 		return email;
 	}
+
+
 	public void setEmail(String email) {
 		this.email = email;
 	}
+
+
 	public String getAddress() {
 		return address;
 	}
+
+
 	public void setAddress(String address) {
 		this.address = address;
 	}
+
+
 	public String getPhone() {
 		return phone;
 	}
+
+
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
+
+
 	public String getUseyn() {
 		return useyn;
 	}
+
+
 	public void setUseyn(String useyn) {
 		this.useyn = useyn;
 	}
+
+
 	public Date getIndate() {
 		return indate;
 	}
+
+
 	public void setIndate(Date indate) {
 		this.indate = indate;
 	}
-	public String getZip_num() {
-		return zip_num;
+
+
+	public String getZipNum() {
+		return zipNum;
 	}
-	public void setZip_num(String zip_num) {
-		this.zip_num = zip_num;
+
+
+	public void setZipNum(String zipNum) {
+		this.zipNum = zipNum;
 	}
+
+
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
+
+
 	@Override
 	public String toString() {
 		return "MemberDTO [id=" + id + ", pwd=" + pwd + ", name=" + name + ", email=" + email + ", address=" + address
-				+ ", phone=" + phone + ", useyn=" + useyn + ", indate=" + indate + ", zip_num=" + zip_num + "]";
+				+ ", phone=" + phone + ", useyn=" + useyn + ", indate=" + indate + ", zipNum=" + zipNum + "]";
 	}
+	
+	
 
 	
 	

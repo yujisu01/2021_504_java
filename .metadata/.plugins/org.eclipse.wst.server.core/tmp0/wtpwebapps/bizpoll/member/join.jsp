@@ -1,7 +1,40 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="../header.jsp" %>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript" src="js/member.js">
+</script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#idChk").blur(function() {
+			var id = $("#idChk").val();
+			
+			if(id== ""){
+				$("#idChk").val("필수 입력사항 입니다.").css("background-color","red");
+			}else{
+				$("#idChk").css("background-color","white");
+				$.ajax({
+					type : "POST",
+					url : "id_check_form.bizpoll",
+					dataType : "json",
+					data : "id=" + id,
+					success : function(data){
+						if (data.message =="1") {
+							$("#message").html("사용불가능 아이디입니다").css("color","red");
+							$("#reid").val("-1");
+						}else{
+							$("#message").html("사용가능한 아이디입니다").css("color","blue");
+							$("#reid").val("1");
+						}
+					},
+				
+					fail : function(){
+						alert("시스템에러");
+					}
+				});
+			}
+		});
+	});
 </script>
 
 	<article>
@@ -10,9 +43,10 @@
 			<fieldset>
 				<legend>Basic Info</legend>
 				<label>User ID</label>
-				<input type="text" name="id" size="12" maxlength="36">
-				<input type="hidden"name="reid">
-				<input type="button" value="중복체크" class="dup" onclick="idcheck();"><br>
+				<!-- <input type="text" name="id" size="12"> -->
+				<input type="text" name="id" id="idChk">&nbsp;<span id="message"></span>
+				<input type="hidden"name="reid" id="reid"><br>
+				<!-- <input type="button" value="중복체크" class="dup" onclick="idcheck();"><br> -->
 				<label>Password</label>
 				<input type="password" name="pwd"><br>
 				<label>Retype Password</label>
