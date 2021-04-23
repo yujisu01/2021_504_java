@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.bizpoll.action.Action;
 import com.bizpoll.action.ActionForward;
+import com.bizpoll.action.BoardListAction;
 import com.bizpoll.action.ContractAction;
 import com.bizpoll.action.DeleteAction;
 import com.bizpoll.action.FindZipNumAction;
@@ -90,6 +91,13 @@ public class BizpollFrontController extends HttpServlet {
 		}else if(command.equals("/delete.bizpoll")) {
 			action = new DeleteAction();
 			forward = action.excute(request, response);
+		}
+		
+		// -------------- 게시판 액션 맵핑 --------------
+		if (command.equals("/boardList.bizpoll")) {
+			action = new BoardListAction();
+			forward = action.excute(request, response);
+			
 		}
 		
 		// -------------- 공통 분기작업 -------------- 

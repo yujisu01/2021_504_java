@@ -15,7 +15,7 @@
 	<div id="wrap">
 		<header>
 			<div id="logo">
-				<a href="index.bizpoll"><img alt="" src="images/logo.png">
+				<a href="index.bizpoll"><img alt="" src="images/logo.png" width="330" height="300">
 				</a>
 			</div>
 			<nav id="category_menu">

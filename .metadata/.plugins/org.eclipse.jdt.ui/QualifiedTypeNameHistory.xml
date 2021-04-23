@@ -58,4 +58,6 @@
 <fullyQualifiedTypeName name="com.bizpoll.dao.MemberDAO"/>
 <fullyQualifiedTypeName name="com.bizpoll.dto.MemberDTO"/>
 <fullyQualifiedTypeName name="com.bizpoll.common.DBManager"/>
+<fullyQualifiedTypeName name="com.sun.jmx.snmp.Timestamp"/>
+<fullyQualifiedTypeName name="java.sql.Timestamp"/>
 </qualifiedTypeNameHistroy>

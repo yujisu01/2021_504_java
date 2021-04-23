@@ -7,3 +7,4 @@
 1618973041522	Move 'member' to 'WebContent'
 1618978920660	Move 'join.jsp' to 'member'
 1618978958858	Move 'contract.jsp' to 'member'
+1619156011931	Rename package 'mybatis'
