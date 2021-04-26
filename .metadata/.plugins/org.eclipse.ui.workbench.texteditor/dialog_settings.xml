@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="true"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="re"/>
 		<list key="findhistory">
+			<item value="re"/>
 			<item value="ready"/>
 			<item value="logo"/>
 			<item value="main"/>
@@ -22,7 +23,6 @@
 			<item value="scale"/>
 			<item value="bread"/>
 			<item value="post"/>
-			<item value="pst"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>

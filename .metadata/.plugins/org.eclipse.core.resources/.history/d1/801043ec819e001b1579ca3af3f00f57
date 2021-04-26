@@ -1,9 +1,0 @@
-package com.bizpoll.dao;
-
-public class ProductDAO {
-
-	private ProductDAO() {
-		
-	}
-	private static ProductDAO instance = new ProductDAO();
-}

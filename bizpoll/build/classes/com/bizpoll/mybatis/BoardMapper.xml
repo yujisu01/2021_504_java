@@ -16,4 +16,14 @@
 						WHERE RNUM BETWEEN 1 AND 10
 		]]>
 	</select>
+	
+	<select id="getNewArticleNo" resultType="Integer">
+		SELECT max(articleno)
+		FROM board
+	</select>
+	
+	<insert id="createBoard" parameterType="com.bizpoll.dto.BoardDTO">
+		INSERT INTO board(articleno, subject, content, reg_date, ref, re_step, re_level, fileName, id)
+		VALUES(board_seq.nextval, #{subject}, #{content}, sysdate, #{ref}, #{re_step}, #{re_level}, #{fileName}, #{id})
+	</insert>
 </mapper>

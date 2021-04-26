@@ -16,9 +16,6 @@ public class BoardDTO {
 	private String fileName;
 	
 	
-	
-	
-	
 	public BoardDTO() {
 		super();
 		// TODO Auto-generated constructor stub

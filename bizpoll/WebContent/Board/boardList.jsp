@@ -33,7 +33,7 @@
 		</thead>
 		<tbody>
 			<c:choose>
-				<c:when test="${empty boardList }">
+				<c:when test="${empty boardList}">
 					<tr height="10">
 						<th colspan="5">
 							<p align="center">
@@ -70,7 +70,7 @@
 			</c:choose>
 		</tbody>
 	</table>
-	<a class="cls1" href="#">
+	<a class="cls1" href="boardForm.bizpoll">
 		<p class="cls2">글쓰기</p>
 	</a>
 <%@include file="../footer.jsp" %>

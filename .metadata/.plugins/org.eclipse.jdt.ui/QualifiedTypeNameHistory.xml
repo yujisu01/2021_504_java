@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.Random"/>
-<fullyQualifiedTypeName name="java.net.InetAddress"/>
-<fullyQualifiedTypeName name="com.bizpoll.network.InetAdressEx"/>
-<fullyQualifiedTypeName name="com.bizpoll.network.InetAddressEx01"/>
-<fullyQualifiedTypeName name="java.net.URL"/>
-<fullyQualifiedTypeName name="java.net.URLConnection"/>
-<fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
 <fullyQualifiedTypeName name="java.io.FileWriter"/>
 <fullyQualifiedTypeName name="com.bizpoll.network.URLConEx"/>
@@ -37,7 +30,6 @@
 <fullyQualifiedTypeName name="javax.naming.InitialContext"/>
 <fullyQualifiedTypeName name="javax.naming.Context"/>
 <fullyQualifiedTypeName name="javax.sql.DataSource"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.bizpoll.dao.ProductDAO"/>
 <fullyQualifiedTypeName name="com.bizpoll.action.productDetail"/>
 <fullyQualifiedTypeName name="com.bizpoll.dto.ProductDTO"/>
@@ -60,4 +52,12 @@
 <fullyQualifiedTypeName name="com.bizpoll.common.DBManager"/>
 <fullyQualifiedTypeName name="com.sun.jmx.snmp.Timestamp"/>
 <fullyQualifiedTypeName name="java.sql.Timestamp"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.io.Resources"/>
+<fullyQualifiedTypeName name="java.io.Reader"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactoryBuilder"/>
+<fullyQualifiedTypeName name="com.bizpoll.mybatis.SqlMapConfig"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+<fullyQualifiedTypeName name="com.bizpoll.dao.BoardDAO"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactory"/>
 </qualifiedTypeNameHistroy>
