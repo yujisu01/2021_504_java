@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 import com.bizpoll.action.Action;
 import com.bizpoll.action.ActionForward;
 import com.bizpoll.action.BoardAddAction;
+import com.bizpoll.action.BoardDeleteAction;
+import com.bizpoll.action.BoardDetailAction;
 import com.bizpoll.action.BoardFormAction;
 import com.bizpoll.action.BoardListAction;
 import com.bizpoll.action.ContractAction;
@@ -104,6 +106,12 @@ public class BizpollFrontController extends HttpServlet {
 			forward = action.excute(request, response);
 		}else if (command.equals("/boardAdd.bizpoll")) {
 			action = new BoardAddAction();
+			forward = action.excute(request, response);
+		}else if (command.equals("/boardDetail.bizpoll")) {
+			action = new BoardDetailAction();
+			forward = action.excute(request, response);
+		}else if(command.equals("/boardDelete.bizpoll")) {
+			action = new BoardDeleteAction();
 			forward = action.excute(request, response);
 		}
 			

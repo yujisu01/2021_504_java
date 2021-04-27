@@ -18,6 +18,18 @@
 		font-size: 30px;
 	}
 </style>
+<script type="text/javascript">
+	function boardWrite(){
+	var id = "${sessionScope.loginUser}"
+	
+	if(id == ""){
+		alert("로그인이 필요한 서비스입니다.");
+		location.href="login_action.bizpoll";
+	}else{
+		location.href="boardForm.bizpoll";
+	}
+}
+</script>
 </head>
 <body>
 	<h1 class="cls2">QnA</h1>
@@ -55,10 +67,10 @@
 											<span style="padding-left: 20px;"></span>
 										</c:forEach>
 										<span style="font-size: 12px;">[답변]</span>
-										<a class="cls1" href="boardView.bizpoll?articleNo=${boardListDTO.articleNo}">${boardListDTO.subject }</a>
+										<a class="cls1" href="boardDetail.bizpoll?articleNo=${boardListDTO.articleNo}">${boardListDTO.subject }</a>
 									</c:when>
 								<c:otherwise>
-									<a class="cls1" href="boardView.bizpoll?articleNo=${boardListDTO.articleNo}">${boardListDTO.subject }></a>
+									<a class="cls1" href="boardDetail.bizpoll?articleNo=${boardListDTO.articleNo}">${boardListDTO.subject }></a>
 								</c:otherwise>
 								</c:choose>
 							</td>
@@ -70,9 +82,11 @@
 			</c:choose>
 		</tbody>
 	</table>
-	<a class="cls1" href="boardForm.bizpoll">
+	
+	<a class="cls1" href="javascript:boardWrite()">
 		<p class="cls2">글쓰기</p>
 	</a>
+		
 <%@include file="../footer.jsp" %>
 </body>
 </html>

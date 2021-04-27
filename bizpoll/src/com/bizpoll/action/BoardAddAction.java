@@ -80,7 +80,8 @@ public class BoardAddAction implements Action{
 			// IO객체를 사용했다. 
 			pw.print("<script>" + "alert('새글을 추가했습니다.');" + "location.href='" + "boardList.bizpoll';" + "</script>");
 		}else {
-			pw.print("<script>" + "alert('등록에 실패했습니다.');" + "history.go(-1);" + "</script>");
+			//pw.print("<script>" + "alert('등록에 실패했습니다');" + "history.go(-1);" + "</script>");
+			pw.print("<script>" + "alert('로그인 후 글을 등록해 주세요');" + "location.href='" + "login_action.bizpoll';" + "</script>");
 		}
 		// forward 필요없다
 		return null;

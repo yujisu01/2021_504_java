@@ -6,12 +6,15 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="true"/>
-		<item key="selection" value="re"/>
+		<item key="selection" value="main"/>
 		<list key="findhistory">
+			<item value="main"/>
+			<item value="border"/>
+			<item value="#"/>
+			<item value="Board"/>
 			<item value="re"/>
 			<item value="ready"/>
 			<item value="logo"/>
-			<item value="main"/>
 			<item value="fade_dog"/>
 			<item value="src"/>
 			<item value="31"/>
@@ -20,9 +23,6 @@
 			<item value="images"/>
 			<item value="url"/>
 			<item value="width"/>
-			<item value="scale"/>
-			<item value="bread"/>
-			<item value="post"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>

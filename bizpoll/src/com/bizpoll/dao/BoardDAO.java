@@ -68,5 +68,33 @@ public class BoardDAO {
 		}
 		return result;
 	}
+	public BoardDTO boardDetail(int articleNo) {
+		sqlSession = sqlSessionFactory.openSession();
+		BoardDTO bDto = null;
+		try {
+			bDto = sqlSession.selectOne("boardDetail", articleNo);
+			sqlSession.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			sqlSession.close();
+		}
+		return bDto;
+		
+	}public void boardDelete(int articleNo) {
+		sqlSession = sqlSessionFactory.openSession();
+		
+		try {
+			sqlSession.delete("boardDelete", articleNo);
+			sqlSession.commit();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			sqlSession.close();
+		}
+		
+		
+	}
 
 }
