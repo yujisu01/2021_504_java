@@ -68,10 +68,13 @@ public class BoardDAO {
 		}
 		return result;
 	}
+	// 파라미터를 BoardDetailAction클래스의 int articleNo 받아옴
 	public BoardDTO boardDetail(int articleNo) {
+		// 세션객체 얻어서, Mybatis한테 호출을 해줌.
 		sqlSession = sqlSessionFactory.openSession();
 		BoardDTO bDto = null;
 		try {
+			// 객체로 담아서 파라미터로 보냄 (articleNo)
 			bDto = sqlSession.selectOne("boardDetail", articleNo);
 			sqlSession.close();
 		} catch (Exception e) {
@@ -95,6 +98,20 @@ public class BoardDAO {
 		}
 		
 		
+	}
+	public int modify(BoardDTO bDto) {
+		sqlSession = sqlSessionFactory.openSession();
+		
+		int result=0;
+		try {
+			result = sqlSession.update("modifyBoard",bDto);
+			sqlSession.commit();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			sqlSession.close();
+		}
+		return result;
 	}
 
 }

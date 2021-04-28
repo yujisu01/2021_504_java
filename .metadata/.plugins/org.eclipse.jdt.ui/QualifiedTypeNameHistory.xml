@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.NullPointerException"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="com.bizpoll.ab.admin.AdminDTO"/>
 <fullyQualifiedTypeName name="com.bizpoll.ab.admin.AdminDAO"/>
 <fullyQualifiedTypeName name="com.bizpoll.anonymous.Person"/>
 <fullyQualifiedTypeName name="com.bizpoll.anonymous.Anonymous"/>
@@ -50,7 +47,6 @@
 <fullyQualifiedTypeName name="org.apache.commons.fileupload.FileItem"/>
 <fullyQualifiedTypeName name="com.bizpoll.common.FileUpLoad"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
-<fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="org.apache.catalina.Session"/>
@@ -60,4 +56,8 @@
 <fullyQualifiedTypeName name="com.bizpoll.action.ActionForward"/>
 <fullyQualifiedTypeName name="com.bizpoll.dao.BoardDAO"/>
 <fullyQualifiedTypeName name="com.bizpoll.dto.BoardDTO"/>
+<fullyQualifiedTypeName name="com.bizpoll.action.ImagePreViewAction"/>
+<fullyQualifiedTypeName name="java.io.OutputStream"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.io.FileInputStream"/>
 </qualifiedTypeNameHistroy>

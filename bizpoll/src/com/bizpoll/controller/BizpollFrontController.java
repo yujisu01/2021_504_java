@@ -16,10 +16,12 @@ import com.bizpoll.action.BoardDeleteAction;
 import com.bizpoll.action.BoardDetailAction;
 import com.bizpoll.action.BoardFormAction;
 import com.bizpoll.action.BoardListAction;
+import com.bizpoll.action.BoardModifyAction;
 import com.bizpoll.action.ContractAction;
 import com.bizpoll.action.DeleteAction;
 import com.bizpoll.action.FindZipNumAction;
 import com.bizpoll.action.IdCheckFormAction;
+import com.bizpoll.action.ImagePreViewAction;
 import com.bizpoll.action.IndexAction;
 import com.bizpoll.action.JoinAction;
 import com.bizpoll.action.JoinFormAction;
@@ -113,7 +115,14 @@ public class BizpollFrontController extends HttpServlet {
 		}else if(command.equals("/boardDelete.bizpoll")) {
 			action = new BoardDeleteAction();
 			forward = action.excute(request, response);
+		}else if(command.equals("/boardModify.bizpoll")) {
+			action = new BoardModifyAction();
+			forward = action.excute(request, response);
+		}else if(command.equals("/imagePreView.bizpoll")) {
+			action = new ImagePreViewAction();
+			forward = action.excute(request, response);
 		}
+		
 			
 		
 		

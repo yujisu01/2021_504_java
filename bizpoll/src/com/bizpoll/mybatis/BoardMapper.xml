@@ -27,12 +27,21 @@
 		VALUES(board_seq.nextval, #{subject}, #{content}, sysdate, #{ref}, #{re_step}, #{re_level}, #{fileName}, #{id})
 	</insert>
 	
-	<select id="boardDetail" resultType="com.bizpoll.dto.BoardDTO">
+	<select id="boardDetail" parameterType="Integer" resultType="com.bizpoll.dto.BoardDTO">
 		SELECT * FROM board WHERE articleno = #{articleno}
 	</select>
 	
 	<delete id="boardDelete">
 		delete from board where articleno = #{articleNo}
 	</delete>
+	
+	<update id="modifyBoard" parameterType="com.bizpoll.dto.BoardDTO">
+		update board set subject=#{subject},content=#{content}
+		<if test="fileName != null">
+			, fileName=#{fileName}
+		</if>
+		where articleNo = #{articleNo}
+	
+	</update>
 	
 </mapper>
