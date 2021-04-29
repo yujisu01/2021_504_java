@@ -45,8 +45,6 @@
 <fullyQualifiedTypeName name="org.apache.commons.fileupload.servlet.ServletFileUpload"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="org.apache.commons.fileupload.FileItem"/>
-<fullyQualifiedTypeName name="com.bizpoll.common.FileUpLoad"/>
-<fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="org.apache.catalina.Session"/>
@@ -54,10 +52,12 @@
 <fullyQualifiedTypeName name="com.bizpoll.action.BoardDetailAction"/>
 <fullyQualifiedTypeName name="com.bizpoll.mybatis.SqlMapConfig"/>
 <fullyQualifiedTypeName name="com.bizpoll.action.ActionForward"/>
-<fullyQualifiedTypeName name="com.bizpoll.dao.BoardDAO"/>
-<fullyQualifiedTypeName name="com.bizpoll.dto.BoardDTO"/>
 <fullyQualifiedTypeName name="com.bizpoll.action.ImagePreViewAction"/>
 <fullyQualifiedTypeName name="java.io.OutputStream"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+<fullyQualifiedTypeName name="com.bizpoll.dao.BoardDAO"/>
+<fullyQualifiedTypeName name="com.bizpoll.common.FileUpLoad"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="com.bizpoll.dto.BoardDTO"/>
 </qualifiedTypeNameHistroy>

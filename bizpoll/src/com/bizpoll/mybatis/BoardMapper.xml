@@ -41,7 +41,33 @@
 			, fileName=#{fileName}
 		</if>
 		where articleNo = #{articleNo}
-	
 	</update>
 	
+	<select id="selectBoardReplyMaxOrder" resultType="int" parameterType="com.bizpoll.dto.BoardDTO">
+	<![CDATA[
+		select NVL(MAX(re_step),0) 
+		from board
+		where ref = #{ref}
+		and re_step > #{re_step}
+		and re_level <= #{re_level}
+		]]>
+	</select>
+	<select id="selectReStep" resultType="int" parameterType="com.bizpoll.dto.BoardDTO">
+		<![CDATA[
+		select NVL(MAX(re_step),0) + 1
+		from board
+		where ref =#{ref}
+		]]>
+	</select>
+	<update id="replyReStepUpdate" parameterType="Integer">
+		<![CDATA[
+			update board 
+			set re_step = re_step + 1
+			where ref = #{ref} 
+			and re_step > #{re_step}
+		]]>
+	</update>
 </mapper>
+
+
+

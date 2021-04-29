@@ -110,6 +110,46 @@ public class BoardDAO {
 			e.printStackTrace();
 		}finally {
 			sqlSession.close();
+			
+		}
+		return result;
+	}
+	// int값이니까 boardMapper에서도 resultType을 Int값으로 한다.
+	// 파라미터가 DTO니까 mapper에서도 DTO로 설정해준다.
+	public int replyReStepUdate(BoardDTO bDto) {
+		sqlSession = sqlSessionFactory.openSession();
+		int result = 0;
+		
+		try {
+			// selectOne이니까 boardMapper에서 select문 써야함
+			int maxsOrder = sqlSession.selectOne("selectBoardReplyMaxOrder",bDto);
+			System.out.println("maxsOrder ====> " +maxsOrder);
+			
+			if (maxsOrder == 0) {
+				int selectReStep = sqlSession.selectOne("selectReStep",bDto);
+				int re_level = bDto.getRe_level() + 1;
+				
+				bDto.setRe_step(selectReStep);
+				bDto.setRe_level(re_level);
+				
+				result = sqlSession.insert("createBoard", bDto);
+			}else {
+				maxsOrder = sqlSession.selectOne("selectBoardReplyMaxOrder",bDto);
+				bDto.setRe_step(maxsOrder);
+				
+				sqlSession.update("replyReStepUpdate",bDto);
+				bDto.setRe_step(bDto.getRe_step() + 1);
+				
+				int re_level = bDto.getRe_level() + 1;
+				bDto.setRe_level(re_level);
+				
+				result = sqlSession.insert("createBoard", bDto);
+				sqlSession.commit();
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}finally {
+			sqlSession.close();
 		}
 		return result;
 	}

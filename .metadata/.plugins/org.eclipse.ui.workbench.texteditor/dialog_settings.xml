@@ -6,8 +6,12 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="true"/>
-		<item key="selection" value="fn_modi"/>
+		<item key="selection" value="boardDetail"/>
 		<list key="findhistory">
+			<item value="boardDetail"/>
+			<item value="update "/>
+			<item value="boarddelete"/>
+			<item value="remo"/>
 			<item value="fn_modi"/>
 			<item value="reply"/>
 			<item value="fn_re"/>
@@ -19,10 +23,6 @@
 			<item value="remove"/>
 			<item value="modi"/>
 			<item value="JoinAction"/>
-			<item value="main"/>
-			<item value="border"/>
-			<item value="#"/>
-			<item value="Board"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>
