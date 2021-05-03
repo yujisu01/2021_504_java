@@ -1,6 +1,7 @@
 package com.bizpoll.dao;
 
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -20,19 +21,33 @@ public class BoardDAO {
 	SqlSession sqlSession;
 	
 	// Action에서 List로 받으니까 여기서도 List로 받음
-	public List<BoardDTO> boardList(){
+	public List<BoardDTO> boardList(Map<String, Object> boardParmMap){
 		sqlSession = sqlSessionFactory.openSession();
 		
 		List<BoardDTO> boardList = null;
 		
 		try {
-			boardList = sqlSession.selectList("selBoardList");
+			boardList = sqlSession.selectList("selBoardList",boardParmMap);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}finally {
 			sqlSession.close();
 		}
 		return boardList;
+	}
+	public int boardListAllCnt(Map<String, Object> boardParmMap) {
+		sqlSession = sqlSessionFactory.openSession();
+		
+		int boardListAllCnt = 0;
+		try {
+			boardListAllCnt = sqlSession.selectOne("boardListAllCnt", boardParmMap);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			sqlSession.close();
+		}
+		return boardListAllCnt;
 	}
 	// Integer 사용한 이유: Null도 사용할수 있어서 (기초자료형 int는 null 못씀)
 	// wrapper클래스와 기초자료형 사용법이 그때그때다르다
@@ -114,6 +129,17 @@ public class BoardDAO {
 		}
 		return result;
 	}
+	public void boardCount(int articleNo) {
+		sqlSession = sqlSessionFactory.openSession();
+		try {
+			sqlSession.update("boardCount",articleNo);
+			sqlSession.commit();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			sqlSession.close();
+		}
+	}
 	// int값이니까 boardMapper에서도 resultType을 Int값으로 한다.
 	// 파라미터가 DTO니까 mapper에서도 DTO로 설정해준다.
 	public int replyReStepUdate(BoardDTO bDto) {
@@ -153,5 +179,7 @@ public class BoardDAO {
 		}
 		return result;
 	}
+	
+
 
 }

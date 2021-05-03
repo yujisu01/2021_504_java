@@ -25,6 +25,7 @@ public class BoardDetailAction implements Action{
 		// articleNo를 호출해서, bDto객체에 담았다.
 		BoardDTO bDto = bDao.boardDetail(articleNo);
 		
+		bDao.boardCount(articleNo);
 		System.out.println("bDto ====>" + bDto.toString());
 		
 		// 화면에 보여주기 위해 하나하나 안담고, DTO객체로 다 담아서 보여줌
