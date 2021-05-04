@@ -6,34 +6,35 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="true"/>
-		<item key="selection" value="boardDetail"/>
+		<item key="selection" value="hover"/>
 		<list key="findhistory">
+			<item value="hover"/>
+			<item value="cls"/>
+			<item value="cls2"/>
+			<item value="글쓰기"/>
+			<item value="page"/>
+			<item value="red"/>
+			<item value="boardList"/>
+			<item value="empty"/>
+			<item value="get"/>
 			<item value="boardDetail"/>
 			<item value="update "/>
 			<item value="boarddelete"/>
 			<item value="remo"/>
 			<item value="fn_modi"/>
 			<item value="reply"/>
-			<item value="fn_re"/>
-			<item value="fn_mo"/>
-			<item value="Modi"/>
-			<item value="modify"/>
-			<item value="preview"/>
-			<item value="content"/>
-			<item value="remove"/>
-			<item value="modi"/>
-			<item value="JoinAction"/>
 		</list>
 		<list key="replacehistory">
+			<item value="selAllBoardList"/>
 			<item value=""/>
 			<item value="bread"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="453"/>
-		<item key="DIALOG_Y_ORIGIN" value="334"/>
+		<item key="DIALOG_X_ORIGIN" value="1212"/>
+		<item key="DIALOG_Y_ORIGIN" value="276"/>
 		<item key="DIALOG_WIDTH" value="288"/>
-		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_HEIGHT" value="385"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
